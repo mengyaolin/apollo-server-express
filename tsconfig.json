@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "./build",
+    "incremental": true,
+    "paths": {
+      "*": ["node_modules/*"],
+      "@route/*": [
+        "./src/route/*"
+      ],
+      "@controller/*": [
+        "./src/controller/*"
+      ],
+      "@app": [
+        "./src/app.ts"
+      ],
+      "@logger": [
+        "./src/common/util/logger/index.ts"
+      ]
+    }
+  },
+  "include": ["src"]
+}
